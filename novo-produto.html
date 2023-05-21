@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Clientes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/public/bootstrap/bootstrap.js">
+    <link rel="stylesheet" href="/public/style.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item btn btn-outline-info ">
+                        <a class="nav-link active " aria-current="page" href="/produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-info">
+                        <a class="nav-link active " aria-current="page" href="/clientes">Clientes</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-info">
+                        <a class="nav-link active " aria-current="page" href="/novo-produto">inserir produto</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-info">
+                        <a class="nav-link active " aria-current="page" href="/novo-cliente">Inserir cliente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Loja</h1>
+        </div>
+        <p><a href="/produtos">Produtos</a></p>
+        <p><a href="/clientes">Clientes</a></p>
+        <h1>Produtos</h1>Código: <input type="text" id="cod" size="5" /> Descrição: <input type="text" id="desc" size="20" />Preço: <input type="text" id="prec" size="10"/> <input type="submit" value="Inserir" onclick="inserir()" /><br><h2>Lista de Produtos</h2><div id="tabela"></div>
+    </div>
+</body>
+
+</html>
