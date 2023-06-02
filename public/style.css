@@ -28,3 +28,8 @@ ul li{
     background-image: url(imagens/mar.jpg) ;
     background-size: cover;
 }
+.div-form{
+    margin: 100px;
+    display: flex;
+    padding: 20px;
+}

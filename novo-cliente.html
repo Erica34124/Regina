@@ -36,12 +36,21 @@
             </div>
         </div>
     </nav>
-    <div class="container cor">
-        <div class="row">
-            <div class="col-12">
-                <h1>Inserir clientes</h1>
+    <div class="div-form">
+        <form id="form" method="POST" action="/incluir-cliente">
+            <div class="form-group">Nome:<input type="text" name="nome" class="form-control" maxlength="3" />
             </div>
+            <div class="form-group">Cpf:<input type="text" name="cpf" class="form-control" maxlength="20" />
+            </div>
+            <div class="form-group">Telefone:<input type="text" name="telefone" class="form-control"
+                    maxlength="10" />
+            </div>
+            <div class="form-group">Pedido:<input type="text" name="pedido" class="form-control"
+                maxlength="10" />
         </div>
+            <br>
+            <input type="submit" value="Salvar" class="btn btn-primary" />
+        </form>
     </div>
 </body>
 </html>
