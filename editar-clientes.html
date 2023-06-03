@@ -1,15 +1,15 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Clientes</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="/public/bootstrap/bootstrap.js">
     <link rel="stylesheet" href="/public/style.css">
-    <script type="text/javascript" src="novo-produto.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Document</title>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary nav">
         <div class="container-fluid">
@@ -36,24 +36,21 @@
             </div>
         </div>
     </nav>
-
-    </div>
-    <div class="div-form container">
-        <div class="jumbotron">
-        </div>
-        <form id="form" method="POST" action="/incluir-produto">
-            <div class="form-group">Código:<input type="text" name="codigo" class="form-control" maxlength="3" />
+    <div class="div-form">
+        <form id="form" method="POST" action="/incluir-cliente">
+            <div class="form-group">Nome:<input type="text" name="nome" class="form-control" maxlength="3" />
             </div>
-            <div class="form-group">Descrição:<input type="text" name="descricao" class="form-control" maxlength="20" />
+            <div class="form-group">Cpf:<input type="text" name="cpf" class="form-control" maxlength="20" />
             </div>
-            <div class="form-group">Preço Unitário:<input type="text" name="preco" class="form-control"
+            <div class="form-group">Telefone:<input type="text" name="telefone" class="form-control"
                     maxlength="10" />
             </div>
+            <div class="form-group">Pedido:<input type="text" name="pedido" class="form-control"
+                maxlength="10" />
+        </div>
             <br>
             <input type="submit" value="Salvar" class="btn btn-primary" />
         </form>
     </div>
-
 </body>
-
 </html>
